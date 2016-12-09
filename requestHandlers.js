@@ -13,14 +13,14 @@ function start(response, postData) {
 	'<body>'+
 	'<form action="/upload" method="post">'+
 	'<textarea name="text" rows="20" cols="60"></textarea>'+
-	'<imput type="submit" value="Submit text" />'+
+	'<input type="submit" value="Submit text" />'+
 	'</form>'+
 	'</body>'+
 	'</html>';
 
 	// respondendo
 	response.writeHead(200, {"Content-Type": "text/html"});
-	response.writeHead(200, {"token": "1234"});
+	//response.writeHead(200, {"token": "1234"});
 	response.write(body);
 	response.end();		
 
